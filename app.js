@@ -7,6 +7,6 @@ app.set('views', './views')
 // 托管
 app.use('/node_modules',express.static('./node_modules'))
 app.get('/', (req, res) => {
-    res.render('index', {})
+    res.render('index.ejs', {})
 })
-app.listen(80, () => console.log("运行成功。。。"))
+app.listen(3000, () => console.log("运行成功。。。"))
